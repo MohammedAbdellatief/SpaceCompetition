@@ -1,0 +1,1084 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang=""><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title> المسابقة الفضائية </title>
+    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="http://www.aladwaa.com/blog/wp-content/uploads/2015/02/adwaa-Favicon-16x16.png" rel="icon" sizes="16x16" />
+
+    <link href="css/normalize.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/home.css" rel="stylesheet" />
+    <!--<link href="css/pace.css" rel="stylesheet" />-->
+    <!--preloader-->
+    <!--<script src="js/vendor/pace.min.js"></script>-->
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+    <![endif]-->
+
+    <!--Ajaxing for SVG Sprite ... placed before body to load icons quick-->
+    <script type="text/javascript">
+        var ajax = new XMLHttpRequest();
+        ajax.open("GET", "img/sprite.svg", true);
+        ajax.send();
+        ajax.onload = function(e) {
+            var div = document.createElement("div");
+            div.innerHTML = ajax.responseText;
+            document.body.insertBefore(div, document.body.childNodes[0]);
+        }
+    </script>
+
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="preloader">
+    <div class="jawn"></div>
+</div><!-- /.preloader -->
+
+
+<header>
+    <div class="main_menu popover_parent">
+        <div class="hamburger_menu">
+            <svg viewBox="0 0 31.6 30.8">
+                <use xlink:href="#hamburger_menu" />
+            </svg>
+        </div>
+        <ul class="pop_over transition">
+            <li>
+                <a class="active" href="index.html">مراحل المسابقة</a>
+            </li>
+            <li>
+                <a href="details.html">تفاصيل المسابقة</a>
+            </li>
+            <li>
+                <a href="prizes.html">جوائز المسابقة</a>
+            </li>
+            <li>
+                <a href="leaderboard.html">قائمة الأبطال</a>
+            </li>
+        </ul>
+    </div>
+    <div class="user popover_parent">
+        <div class="ac_icon btn transparent_btn transition">
+            <svg viewBox="0 0 54 57">
+                <use xlink:href="#user" />
+            </svg>
+        </div>
+        <ul class="pop_over pop_over_left transition">
+            <li>
+                <div class="user_info">
+                    <div class="img-circle">
+                        <img src="img/default_user.png" alt=""/>
+                    </div>
+                    <small>اسم المستخدم</small>
+                </div>
+            </li>
+            <li>
+                <span>المركز</span>
+                <strong class="num">124</strong>
+            </li>
+            <li>
+                <span>النقاط</span>
+                <strong class="num">215</strong>
+            </li>
+            <li>
+                <span>إجمالي المشتركين</span>
+                <strong class="num">121</strong>
+            </li>
+        </ul>
+    </div>
+    <div class="share popover_parent">
+        <div class="ac_icon btn transparent_btn transition">
+            <svg viewBox="0 0 54 57">
+                <use xlink:href="#share" />
+            </svg>
+        </div>
+        <ul class="pop_over pop_over_left transition">
+            <li>
+                <a class="facebook" href="#">
+                    <span>
+                        <svg viewBox="0 0 14 29">
+                            <use xlink:href="#facbook" />
+                        </svg>
+                    </span>اشترك باستخدام فيس بوك
+                </a>
+            </li>
+            <li>
+                <a class="twitter" href="#">
+                    <span>
+                        <svg viewBox="0 0 24 20">
+                            <use xlink:href="#twitter" />
+                        </svg>
+                    </span>اشترك باستخدام تويتر
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<nav class="transition collapse">
+    <ul>
+        <li>
+            <a class="scrl_to" href="#sec9">
+                <svg viewBox="0 0 128 72">
+                    <use xlink:href="#planet_small" class="planet_small" />
+                </svg>
+                <span> كوكب الخطر </span>
+            </a>
+        </li>
+        <li>
+            <a class="scrl_to" href="#sec8">
+                <svg viewBox="0 0 128 72">
+                    <use xlink:href="#planet_small" class="planet_small" />
+                </svg>
+                <span> كوكب العلوم </span>
+            </a>
+        </li>
+        <li>
+            <a class="scrl_to" href="#sec7">
+                <svg viewBox="0 0 128 72">
+                    <use xlink:href="#planet_small" class="planet_small" />
+                </svg>
+                <span> كوكب العبقرية </span>
+            </a>
+        </li>
+        <li>
+            <a class="scrl_to" href="#sec6">
+                <svg viewBox="0 0 128 72">
+                    <use xlink:href="#planet_small" class="planet_small" />
+                </svg>
+                <span> كوكب التاريخ </span>
+            </a>
+        </li>
+        <li>
+            <a class="scrl_to" href="#sec5">
+                <svg viewBox="0 0 128 72">
+                    <use xlink:href="#planet_small" class="planet_small" />
+                </svg>
+                <span> كوكب الضاد </span>
+            </a>
+        </li>
+        <li>
+            <a class="scrl_to" href="#sec4">
+                <svg viewBox="0 0 128 72">
+                    <use xlink:href="#planet_small" class="planet_small" />
+                </svg>
+                <span> كوكب الألعاب </span>
+            </a>
+        </li>
+        <li>
+            <a class="scrl_to" href="#sec3">
+                <svg viewBox="0 0 128 72">
+                    <use xlink:href="#planet_small" class="planet_small" />
+                </svg>
+                <span> كوكب الرياضة </span>
+            </a>
+        </li>
+        <li>
+            <a class="scrl_to" href="#sec2">
+                <svg viewBox="0 0 128 72">
+                    <use xlink:href="#planet_small" class="planet_small" />
+                </svg>
+                <span> كوكب الثقافة </span>
+            </a>
+        </li>
+
+    </ul>
+</nav>
+
+<div class="main_container">
+    <section id="sec9" class="m_sec last">
+        <div class="planet">
+            <svg viewBox="0 0 400 400">
+                <use xlink:href="#danger"></use>
+            </svg>
+            <div class="tooltip transition slow">
+                <h2> المرحلة الأخيرة (كوكب الخطر)</h2>
+                <p>في جميع مراحل تعليمك... الأضواء هيكون رفيقك للنجاح بتفوق في كل المواد الدراسية ليضمن لك تفوق مستمر ومستقبل ناجح جداً</p>
+                <a class="btn locked" href="#"> المرحلة مغلقة  </a>
+            </div>
+        </div>
+        <div class="stars">
+            <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin slice">
+                <g class="starContainer">
+                </g>
+            </svg>
+        </div>
+        <div class="shootingStar_2">
+            <svg viewBox="0 0 68 69">
+                <use xlink:href="#shootingStar"></use>
+            </svg>
+        </div>
+    </section>
+    <section id="sec8" class="m_sec science">
+        <div class="planet">
+            <svg viewBox="0 0 400 400">
+                <use xlink:href="#science"></use>
+            </svg>
+            <div class="tooltip transition slow">
+                <h2> المرحلة السابعة (كوكب العلوم)</h2>
+                <p>في جميع مراحل تعليمك... الأضواء هيكون رفيقك للنجاح بتفوق في كل المواد الدراسية ليضمن لك تفوق مستمر ومستقبل ناجح جداً</p>
+                <a class="btn locked" href="#"> المرحلة مغلقة  </a>
+            </div>
+        </div>
+        <div class="stars">
+            <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin slice">
+                <g class="starContainer">
+                </g>
+            </svg>
+        </div>
+        <div class="satellite satellite_2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+                <path fill="#3D8DA6" d="M310.3 65.3c-3.5-3.5-3.5-8.9 0-12.4l45.1-45.1c3.5-3.5 8.9-3.5 12.4 0l25.6 25.6c3.5 3.5 3.5 8.9 0 12.4l-45.1 45.1c-3.5 3.5-8.9 3.5-12.4 0l-25.6-25.6z"/>
+                <path opacity=".1" fill="#FFF" d="M348.4 90.8l45.1-45.1c3.5-3.5 3.5-8.9 0-12.4l-12.9-12.9L323 77.9l12.9 12.9c3.5 3.6 8.9 3.6 12.5 0z"/>
+                <g fill="#66B5CC">
+                    <path d="M291.897 205.905l-20.93-20.93 3.676-3.677 20.93 20.93zM272.366 225.313l-20.93-20.93 3.677-3.677 20.93 20.93z"/>
+                </g>
+                <path fill="#3D8DA6" d="M251.6 235.9c-1.9-1.9-1.9-5.2 0-7l47.4-47.4c1.9-1.9 5.2-1.9 7 0l92.5 92.5c1.9 1.9 1.9 5.2 0 7l-47.4 47.4c-1.9 1.9-5.2 1.9-7 0l-92.5-92.5z"/>
+                <path fill="#9DD1E0" d="M256.8 235.4c-1.6-1.6-1.6-4.7 0-6.3l42.5-42.5c1.6-1.6 4.7-1.6 6.3 0l87.8 87.8c1.6 1.6 1.6 4.7 0 6.3l-42.5 42.5c-1.6 1.6-4.7 1.6-6.3 0l-87.8-87.8z"/>
+                <path fill="#3D8DA6" d="M372.77 277.705l9.264-9.263 9.263 9.263-9.263 9.263z"/>
+                <path opacity=".2" fill="#9DD1E0" d="M372.8 277.5l9.4-9.2v18.6"/>
+                <path fill="#3D8DA6" d="M361.25 289.204l9.264-9.263 9.263 9.264-9.263 9.263z"/>
+                <path opacity=".2" fill="#9DD1E0" d="M361.3 289l9.4-9.2v18.6"/>
+                <path fill="#3D8DA6" d="M349.8 300.774l9.264-9.263 9.263 9.264-9.263 9.263z"/>
+                <path opacity=".2" fill="#9DD1E0" d="M349.8 300.7l9.4-9.4v18.6"/>
+                <path fill="#3D8DA6" d="M338.447 312.06l9.263-9.264 9.263 9.263-9.263 9.262z"/>
+                <path opacity=".2" fill="#9DD1E0" d="M338.3 312.2l9.4-9.4v18.6"/>
+                <path fill="#3D8DA6" d="M361.483 266.208l9.263-9.263 9.263 9.263-9.264 9.263z"/>
+                <path opacity=".2" fill="#9DD1E0" d="M361.5 266.2l9.2-9.4v18.8"/>
+                <path fill="#3D8DA6" d="M349.962 277.707l9.263-9.263 9.263 9.263-9.263 9.263z"/>
+                <path opacity=".2" fill="#9DD1E0" d="M350 277.7l9.2-9.4v18.8"/>
+                <path fill="#3D8DA6" d="M338.513 289.277l9.263-9.263 9.263 9.263-9.264 9.263z"/>
+                <path opacity=".2" fill="#9DD1E0" d="M338.5 289.2l9.2-9.4v18.8"/>
+                <path fill="#3D8DA6" d="M326.992 300.776l9.263-9.263 9.263 9.263-9.263 9.263z"/>
+                <path opacity=".2" fill="#9DD1E0" d="M327 300.7l9.2-9.2v18.6"/>
+                <path fill="#3D8DA6" d="M350.1 254.855l9.262-9.263 9.263 9.263-9.263 9.263z"/>
+                <path opacity=".2" fill="#9DD1E0" d="M350 254.9l9.4-9.4v18.6"/>
+                <path fill="#3D8DA6" d="M338.578 266.354l9.263-9.263 9.264 9.264-9.263 9.263z"/>
+                <path opacity=".2" fill="#9DD1E0" d="M338.5 266.4l9.4-9.4v18.8"/>
+                <path fill="#3D8DA6" d="M327.058 277.853l9.263-9.263 9.264 9.263-9.263 9.263z"/>
+                <path opacity=".2" fill="#9DD1E0" d="M327 277.9l9.4-9.4v18.8"/>
+                <path fill="#3D8DA6" d="M315.538 289.352l9.263-9.263 9.264 9.262-9.263 9.263z"/>
+                <path opacity=".2" fill="#9DD1E0" d="M315.5 289.4l9.4-9.4v18.8"/>
+                <g>
+                    <path fill="#3D8DA6" d="M338.787 243.667l9.263-9.263 9.263 9.263-9.263 9.263z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M338.7 243.4l9.4-9.1v18.5"/>
+                    <path fill="#3D8DA6" d="M327.267 255.166l9.263-9.263 9.263 9.263-9.263 9.263z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M327.2 254.9l9.4-9.1v18.5"/>
+                    <g>
+                        <path fill="#3D8DA6" d="M315.747 266.665l9.263-9.263 9.263 9.263-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M315.7 266.7l9.4-9.4v18.5"/>
+                    </g>
+                    <g>
+                        <path fill="#3D8DA6" d="M304.392 278.092l9.263-9.263 9.263 9.262-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M304.2 278.2l9.4-9.4v18.5"/>
+                    </g>
+                </g>
+                <g>
+                    <path fill="#3D8DA6" d="M327.498 232.17l9.263-9.263 9.264 9.263-9.263 9.263z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M327.5 232.2l9.1-9.4v18.7"/>
+                    <path fill="#3D8DA6" d="M315.978 243.67l9.263-9.264 9.264 9.263-9.263 9.262z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M316 243.7l9.1-9.4v18.8"/>
+                    <g>
+                        <path fill="#3D8DA6" d="M304.458 255.168l9.263-9.263 9.264 9.263-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M304.5 255.2l9.1-9.4v18.8"/>
+                    </g>
+                    <g>
+                        <path fill="#3D8DA6" d="M292.938 266.667l9.263-9.263 9.264 9.263-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M293 266.7l9.1-9.2v18.6"/>
+                    </g>
+                </g>
+                <g>
+                    <path fill="#3D8DA6" d="M316.044 220.746l9.263-9.263 9.263 9.263-9.263 9.263z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M316 220.9l9.4-9.4V230"/>
+                    <path fill="#3D8DA6" d="M304.453 232.316l9.263-9.263 9.263 9.263-9.264 9.263z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M304.5 232.4l9.3-9.4v18.8"/>
+                    <g>
+                        <path fill="#3D8DA6" d="M293.003 243.885l9.263-9.263 9.263 9.263-9.264 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M293 243.9l9.3-9.4v18.8"/>
+                    </g>
+                    <g>
+                        <path fill="#3D8DA6" d="M281.483 255.384l9.263-9.263 9.263 9.264-9.264 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M281.5 255.4l9.3-9.4v18.8"/>
+                    </g>
+                </g>
+                <g>
+                    <path fill="#3D8DA6" d="M304.732 209.56l9.263-9.264 9.263 9.263-9.263 9.262z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M304.7 209.4l9.4-9.2v18.6"/>
+                    <path fill="#3D8DA6" d="M293.283 221.128l9.263-9.263 9.263 9.263-9.264 9.263z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M293.2 220.9l9.4-9.2v18.6"/>
+                    <g>
+                        <path fill="#3D8DA6" d="M281.692 232.698l9.263-9.263 9.263 9.263-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M281.7 232.6l9.4-9.4v18.6"/>
+                    </g>
+                    <g>
+                        <path fill="#3D8DA6" d="M270.338 243.983l9.263-9.263 9.264 9.263-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M270.2 244.1l9.4-9.4v18.6"/>
+                    </g>
+                </g>
+                <g>
+                    <path fill="#3D8DA6" d="M293.444 198.062l9.263-9.263 9.263 9.262-9.263 9.263z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M293.4 198.1l9.2-9.4v18.8"/>
+                    <path fill="#3D8DA6" d="M281.994 209.632l9.263-9.263 9.263 9.262-9.263 9.263z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M281.9 209.6l9.2-9.4V219"/>
+                    <g>
+                        <path fill="#3D8DA6" d="M270.403 221.2l9.263-9.262 9.263 9.263-9.264 9.264z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M270.4 221.1l9.2-9.4v18.8"/>
+                    </g>
+                    <g>
+                        <path fill="#3D8DA6" d="M258.883 232.7l9.263-9.263 9.263 9.263-9.264 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M258.9 232.6l9.2-9.1V242"/>
+                    </g>
+                </g>
+                <g>
+                    <g fill="#66B5CC">
+                        <path d="M197.73 104.892l20.93 20.93-3.677 3.677-20.93-20.93zM178.435 124.3l20.93 20.93-3.677 3.677-20.93-20.93z"/>
+                    </g>
+                    <path fill="#3D8DA6" d="M164.1 148.6c1.9 1.9 5.2 1.9 7 0l47.4-47.4c1.9-1.9 1.9-5.2 0-7L126.1 1.6c-1.9-1.9-5.2-1.9-7 0L71.6 49.1c-1.9 1.9-1.9 5.2 0 7l92.5 92.5z"/>
+                    <path fill="#9DD1E0" d="M164.8 143.4c1.6 1.6 4.7 1.6 6.3 0l42.3-42.3c1.6-1.6 1.6-4.7 0-6.3l-87.8-88c-1.6-1.6-4.7-1.6-6.3 0L76.8 49.3c-1.6 1.6-1.6 4.7 0 6.3l88 87.8z"/>
+                    <path fill="#3D8DA6" d="M113.465 18.042l9.263-9.263 9.263 9.262-9.262 9.263z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M122.5 27.5l9.4-9.4h-18.5"/>
+                    <path fill="#3D8DA6" d="M101.874 29.612l9.263-9.263 9.263 9.262-9.263 9.263z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M111 39l9.4-9.4h-18.5"/>
+                    <path fill="#3D8DA6" d="M90.353 41.11l9.263-9.262 9.263 9.263-9.264 9.264z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M99.5 50.5l9.4-9.4H90.4"/>
+                    <path fill="#3D8DA6" d="M78.904 52.68l9.263-9.262 9.263 9.263-9.263 9.264z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M88 62l9.4-9.4H78.9"/>
+                    <g>
+                        <path fill="#3D8DA6" d="M124.683 29.61l9.263-9.263 9.263 9.263-9.264 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M134 38.7l9.2-9.4h-18.6"/>
+                        <path fill="#3D8DA6" d="M113.163 41.11l9.263-9.264 9.263 9.263-9.264 9.262z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M122.5 50.2l9.2-9.1h-18.6"/>
+                        <g>
+                            <path fill="#3D8DA6" d="M101.713 52.678l9.263-9.263 9.263 9.263-9.264 9.263z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M111 61.7l9.2-9.1h-18.6"/>
+                        </g>
+                        <g>
+                            <path fill="#3D8DA6" d="M89.98 64.01l9.262-9.262 9.263 9.263-9.263 9.264z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M99.5 73.2l9.2-9.1H90.1"/>
+                        </g>
+                    </g>
+                    <g>
+                        <path fill="#3D8DA6" d="M135.994 40.797l9.263-9.263 9.263 9.263-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M145.3 50.2l9.4-9.4h-18.8"/>
+                        <path fill="#3D8DA6" d="M124.474 52.296l9.263-9.263L143 52.296l-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M133.8 61.7l9.4-9.4h-18.8"/>
+                        <g>
+                            <path fill="#3D8DA6" d="M112.954 63.795l9.263-9.263 9.263 9.263-9.263 9.263z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M122.3 73.2l9.4-9.4h-18.8"/>
+                        </g>
+                        <g>
+                            <path fill="#3D8DA6" d="M101.504 75.365l9.263-9.263 9.263 9.263-9.263 9.263z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M110.8 84.7l9.4-9.3h-18.8"/>
+                        </g>
+                    </g>
+                    <g>
+                        <path fill="#3D8DA6" d="M147.45 52.08l9.262-9.263 9.263 9.263-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M156.6 61.5l9.4-9.4h-18.6"/>
+                        <path fill="#3D8DA6" d="M136 63.65l9.262-9.263 9.263 9.263-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M145.1 73l9.4-9.4h-18.6"/>
+                        <g>
+                            <path fill="#3D8DA6" d="M124.48 75.15l9.262-9.264 9.263 9.263-9.263 9.262z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M133.6 84.5l9.4-9.4h-18.6"/>
+                        </g>
+                        <g>
+                            <path fill="#3D8DA6" d="M112.96 86.648l9.262-9.263 9.263 9.263-9.263 9.263z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M122.1 96l9.4-9.4h-18.6"/>
+                        </g>
+                    </g>
+                    <g>
+                        <path fill="#3D8DA6" d="M158.738 63.577L168 54.314l9.264 9.263L168 72.84z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M168.1 72.8l9.1-9.4h-18.5"/>
+                        <path fill="#3D8DA6" d="M147.288 75.147l9.263-9.263 9.264 9.263-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M156.6 84.3l9.1-9.2h-18.5"/>
+                        <g>
+                            <path fill="#3D8DA6" d="M135.768 86.646l9.263-9.263 9.264 9.263-9.263 9.263z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M145.1 95.8l9.1-9.2h-18.5"/>
+                        </g>
+                        <g>
+                            <path fill="#3D8DA6" d="M124.104 98.05l9.263-9.264 9.263 9.263-9.263 9.262z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M133.6 107.3l9.1-9.2h-18.5"/>
+                        </g>
+                    </g>
+                    <g>
+                        <path fill="#3D8DA6" d="M170.05 74.765l9.262-9.263 9.263 9.263-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M179.3 84.3l9.4-9.4H170"/>
+                        <path fill="#3D8DA6" d="M158.6 86.334l9.263-9.263 9.263 9.264-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M167.8 95.8l9.4-9.4h-18.7"/>
+                        <g>
+                            <path fill="#3D8DA6" d="M147.08 97.833l9.262-9.263 9.263 9.263-9.263 9.263z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M156.3 107.3l9.4-9.4h-18.8"/>
+                        </g>
+                        <g>
+                            <path fill="#3D8DA6" d="M135.488 109.403l9.263-9.263 9.264 9.263-9.263 9.263z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M144.8 118.8l9.4-9.4h-18.8"/>
+                        </g>
+                    </g>
+                    <g>
+                        <path fill="#3D8DA6" d="M181.504 86.19l9.263-9.264 9.263 9.263-9.263 9.262z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M190.6 95.5l9.4-9.3h-18.5"/>
+                        <path fill="#3D8DA6" d="M169.983 97.687l9.263-9.263 9.263 9.263-9.264 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M179.1 107l9.4-9.3H170"/>
+                        <g>
+                            <path fill="#3D8DA6" d="M158.463 109.186l9.263-9.263 9.263 9.263-9.264 9.263z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M167.6 118.5l9.4-9.3h-18.5"/>
+                        </g>
+                        <g>
+                            <path fill="#3D8DA6" d="M146.943 120.685l9.263-9.263 9.263 9.263-9.264 9.263z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M156.1 130l9.4-9.3h-18.6"/>
+                        </g>
+                    </g>
+                    <g>
+                        <path fill="#3D8DA6" d="M192.793 97.685l9.263-9.263 9.263 9.263-9.264 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M202.1 106.8l9.2-9.4h-18.6"/>
+                        <path fill="#3D8DA6" d="M181.272 109.184l9.263-9.263 9.263 9.264-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M190.6 118.3l9.2-9.1h-18.6"/>
+                        <g>
+                            <path fill="#3D8DA6" d="M169.752 120.683l9.263-9.263 9.263 9.263-9.263 9.263z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M179.1 129.8l9.2-9.1h-18.6"/>
+                        </g>
+                        <g>
+                            <path fill="#3D8DA6" d="M158.088 132.087l9.263-9.263 9.264 9.263-9.263 9.263z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M167.6 141.3l9.2-9.1h-18.6"/>
+                        </g>
+                    </g>
+                </g>
+                <path fill="#3D8DA6" d="M146.96 229.017l32.174-32.173 25.03 25.032-32.172 32.173z"/>
+                <path opacity=".1" fill="#FFF" d="M159.52 241.32l32.172-32.172 12.09 12.09-32.172 32.174z"/>
+                <g fill="#3D8DA6">
+                    <path d="M279.243 130.03l19.728-19.727 10.324 10.324-19.728 19.728zM260.735 111.57l19.728-19.727 10.323 10.323-19.728 19.728z"/>
+                </g>
+                <g>
+                    <path fill="#9DD1E0" d="M83.6 314.3l1.6 1.7 1.7 1.6 46-39.4-5-5-4.9-4.9"/>
+                    <circle fill="#66B5CC" cx="83.3" cy="317.8" r="11.3"/>
+                </g>
+                <path fill="#9DD1E0" d="M172.3 351.6c33.8-33.8 33.8-89 0-122.8s-89-33.8-122.8 0l122.8 122.8z"/>
+                <path fill="#66B5CC" d="M61 219.2c-4 2.8-7.7 6.1-11.3 9.6l122.8 122.8c3.5-3.5 6.8-7.3 9.6-11.3L61 219.2zM165.454 200.174l21.778-21.78 35.71 35.71-21.78 21.78z"/>
+                <path fill="#66B5CC" d="M165.454 200.174l21.778-21.78 35.71 35.71-21.78 21.78z"/>
+                <path opacity=".1" d="M165.294 199.976l21.78-21.78 17.96 17.96-21.78 21.78z"/>
+                <path opacity=".1" fill="#265969" d="M165.294 199.976l21.78-21.78 17.96 17.96-21.78 21.78z"/>
+                <path fill="#66B5CC" d="M303.307 53.277l40.66-40.66 44.475 44.478-40.658 40.658z"/>
+                <path opacity=".1" fill="#265969" d="M303.376 53.06l40.66-40.66 22.272 22.274-40.658 40.66z"/>
+                <path fill="#9DD1E0" d="M170 187.6c-3.5-3.5-3.5-8.9 0-12.4l77.7-77.7c3.5-3.5 8.9-3.5 12.4 0l43.7 43.7c3.5 3.5 3.5 8.9 0 12.4L226.1 231c-3.5 3.5-8.9 3.5-12.4 0L170 187.6zM272.3 85.2c-3.5-3.5-3.5-8.9 0-12.4L323 22.1c3.5-3.5 8.9-3.5 12.4 0l43.7 43.7c3.5 3.5 3.5 8.9 0 12.4l-50.7 50.7c-3.5 3.5-8.9 3.5-12.4 0l-43.7-43.7z"/>
+                <path opacity=".2" fill="#3D8DA6" d="M238.378 218.96l-3.677 3.677-56.072-56.074 3.677-3.676zM294.338 162.78l-3.677 3.678-56.072-56.073 3.677-3.677zM370.716 86.503l-3.677 3.677-56.074-56.073 3.677-3.677z"/>
+                <path opacity=".6" fill="#CDEFFA" d="M157 336.4c33.8-33.8 40.8-82.2 15.3-107.5-25.6-25.6-73.7-18.8-107.5 15.3l92.2 92.2z"/>
+                <path opacity=".4" fill="#E0F8FF" d="M133.6 312.7c33.8-33.8 51.4-71.6 38.7-84-12.4-12.4-50 4.9-84 38.7l45.3 45.3z"/>
+                <path opacity=".6" fill="#66B5CC" d="M61 219.2c-4 2.8-7.7 6.1-11.3 9.6l122.8 122.8c3.5-3.5 6.8-7.3 9.6-11.3L61 219.2z"/>
+                <path opacity=".3" fill="#FFF" d="M191.8 209.4l21.8 21.8c3.5 3.5 8.9 3.5 12.4 0l77.7-77.7c3.5-3.5 3.5-8.9 0-12.4l-21.8-21.8-90.1 90.1zM294.1 107l21.8 21.8c3.5 3.5 8.9 3.5 12.4 0L379 78.1c3.5-3.5 3.5-8.9 0-12.4l-21.8-21.8-63.1 63.1z"/>
+                <g>
+                    <circle fill="#FF456A" cx="276.5" cy="148.8" r="12"/>
+                    <circle fill="#3D8DA6" cx="254.5" cy="170.7" r="5.6"/>
+                    <circle fill="#3D8DA6" cx="237.1" cy="188.3" r="5.6"/>
+                </g>
+                <g>
+                    <circle fill="#3D8DA6" cx="335.2" cy="90.1" r="7.3"/>
+                    <path fill="#66B5CC" d="M294.8 63.6c-1.2-1.2-1.2-2.8 0-3.8l9.9-9.9c1.2-1.2 2.8-1.2 3.8 0l13.4 13.4c1.2 1.2 1.2 2.8 0 3.8L312 77c-1.2 1.2-2.8 1.2-3.8 0l-13.4-13.4z"/>
+                </g>
+                <g fill="none" stroke="#FFF" stroke-linecap="round" stroke-miterlimit="10">
+                    <path class="wave" stroke-width="6" d="M50.9 326.1c0 12.4 10.1 22.8 22.8 22.8"/>
+                    <path class="wave" stroke-width="7" d="M28.4 336.4c0 19.2 15.5 34.7 34.7 34.7"/>
+                    <path class="wave" stroke-width="8" d="M5.9 346.9c0 26.1 20.9 46.9 46.9 46.9"/>
+                </g>
+            </svg>
+        </div>
+    </section>
+    <section id="sec7" class="m_sec riddle">
+        <div class="planet">
+            <svg viewBox="0 0 400 400">
+                <use xlink:href="#riddle"></use>
+            </svg>
+            <div class="tooltip transition slow">
+                <h2> المرحلة السادسة (كوكب العبقرية)</h2>
+                <p>في جميع مراحل تعليمك... الأضواء هيكون رفيقك للنجاح بتفوق في كل المواد الدراسية ليضمن لك تفوق مستمر ومستقبل ناجح جداً</p>
+                <a class="btn locked" href="#"> المرحلة مغلقة  </a>
+            </div>
+        </div>
+        <div class="stars">
+            <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin slice">
+                <g class="starContainer">
+                </g>
+            </svg>
+        </div>
+        <div class="shootingStar_1">
+            <svg viewBox="0 0 68 69">
+                <use xlink:href="#shootingStar"></use>
+            </svg>
+        </div>
+    </section>
+    <section id="sec6" class="m_sec history">
+        <div class="planet">
+            <svg viewBox="0 0 400 400">
+                <use xlink:href="#history"></use>
+            </svg>
+            <div class="tooltip transition slow">
+                <h2> المرحلة الخامسة (كوكب التاريخ)</h2>
+                <p>في جميع مراحل تعليمك... الأضواء هيكون رفيقك للنجاح بتفوق في كل المواد الدراسية ليضمن لك تفوق مستمر ومستقبل ناجح جداً</p>
+                <a class="btn locked" href="#"> المرحلة مغلقة  </a>
+            </div>
+        </div>
+        <div class="stars">
+            <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin slice">
+                <g class="starContainer">
+                </g>
+            </svg>
+        </div>
+        <div class="shootingStar_1">
+            <svg viewBox="0 0 68 69">
+                <use xlink:href="#shootingStar"></use>
+            </svg>
+        </div>
+    </section>
+    <section id="sec5" class="m_sec arabic">
+        <div class="planet">
+            <svg viewBox="0 0 400 400">
+                <use xlink:href="#arabic"></use>
+            </svg>
+            <div class="tooltip transition slow">
+                <h2> المرحلة الرابعة (كوكب الضاد)</h2>
+                <p>في جميع مراحل تعليمك... الأضواء هيكون رفيقك للنجاح بتفوق في كل المواد الدراسية ليضمن لك تفوق مستمر ومستقبل ناجح جداً</p>
+                <a class="btn locked" href="#"> المرحلة مغلقة  </a>
+            </div>
+        </div>
+        <div class="stars">
+            <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin slice">
+                <g class="starContainer">
+                </g>
+            </svg>
+        </div>
+        <div class="shootingStar_2">
+            <svg viewBox="0 0 68 69">
+                <use xlink:href="#shootingStar"></use>
+            </svg>
+        </div>
+        <div class="ufo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131 71">
+                <path fill="#B1CFDE" d="M106 17.9l-.7-.7-.6-.6-14.4 12.8 1.4 1.4 1.3 1.4"/>
+                <ellipse transform="rotate(45 106.356 16.202)" fill="#FF1B4C" cx="106.4" cy="16.2" rx="2.9" ry="3"/>
+                <path fill="#B1CFDE" d="M25.3 17.9l.6-.7.7-.6L41 29.4l-1.4 1.4-1.4 1.4"/>
+                <ellipse transform="rotate(135 24.897 16.203)" fill="#FF1B4C" cx="24.9" cy="16.2" rx="2.9" ry="3"/>
+                <path opacity=".5" fill="#CEEAF7" d="M88.8 23.2c0 12.8-10.4 23.9-23.2 23.9-12.8 0-23.2-11-23.2-23.9S52.8 0 65.6 0c12.8 0 23.2 10.4 23.2 23.2z"/>
+                <path opacity=".3" fill="#FFF" d="M44.5 13.6c1.5.3 3 .4 4.5.4C58.4 14 66.5 8.4 70.1.4c-1.5-.3-3-.4-4.5-.4-9.4 0-17.4 5.6-21.1 13.6z"/>
+                <circle opacity=".6" fill="#FFF" cx="58.2" cy="10.7" r="4.6"/>
+                <path fill="#FF1B4C" d="M89.6 19.8h-48c-2.1 0-3.8 1.7-3.8 3.8v7.2h55.6v-7.2c0-2.1-1.7-3.8-3.8-3.8z"/>
+                <path fill="#4791B5" d="M93.4 24.5H37.8c-2.5 0-4.5 2-4.5 4.5v9h64.5v-9c.1-2.5-1.9-4.5-4.4-4.5z"/>
+                <ellipse fill="#FFCC54" cx="65.6" cy="55.2" rx="23.7" ry="16.1"/>
+                <path fill="#4791B5" d="M45.9 65.5h39.5c1.7 0 3.2-1.4 3.2-3.2v-5.9H42.7v5.9c0 1.8 1.4 3.2 3.2 3.2z"/>
+                <g>
+                    <path fill="#B1CFDE" d="M65.6 61c9.7 0-1.3 0 0 0 0 0-.4 0 0 0 1.4 0-9.6 0 0 0 37.9 0 60.8-15.4 60.8-15.4H4.8S27.7 61 65.6 61z"/>
+                    <path opacity=".6" fill="#95BACC" d="M65.6 61c6.6 0-.9 0 0 0 0 0-.2 0 0 0 1 0-6.6 0 0 0C91.5 61 107 45.6 107 45.6H24.2S39.8 61 65.6 61z"/>
+                    <path fill="#B1CFDE" d="M65.6 61c2.6 0-.3 0 0 0 0 0-.1 0 0 0 .4 0-2.5 0 0 0 10.1 0 16.1-15.4 16.1-15.4H49.5S55.6 61 65.6 61zM81.6 28.4H65.9 49.6c-39.3 0-47 15.8-47 15.8H128.8c-.1 0-7.8-15.8-47.2-15.8z"/>
+                    <path opacity=".6" fill="#95BACC" d="M76.3 28.4H65.8 54.9c-26.3 0-31.4 15.8-31.4 15.8H107.7s-5.1-15.8-31.4-15.8z"/>
+                </g>
+                <path fill="#B1CFDE" d="M69.2 28.9h-3.5-3.6c-8.7 0-10.4 15.8-10.4 15.8H79.4c.1 0-1.6-15.8-10.2-15.8z"/>
+                <g fill="#4791B5">
+                    <path d="M128.4 41.9c0 1.9-1.5 3.4-3.4 3.4H6.3c-1.9 0-3.4-1.5-3.4-3.4s1.5-3.4 3.4-3.4h118.6c1.9 0 3.5 1.5 3.5 3.4z"/>
+                    <path d="M128.4 47.9c0 1.9-1.5 3.4-3.4 3.4H6.3c-1.9 0-3.4-1.5-3.4-3.4s1.5-3.4 3.4-3.4h118.6c1.9 0 3.5 1.5 3.5 3.4z"/>
+                </g>
+                <path fill="#FF1B4C" d="M131.3 44.9c0 2-1.6 3.6-3.6 3.6H3.6c-2 0-3.6-1.6-3.6-3.6s1.6-3.6 3.6-3.6h124.1c1.9 0 3.6 1.6 3.6 3.6z"/>
+                <g id="lights">
+                    <circle fill="#FFD061" cx="4.6" cy="44.9" r="1.9"/>
+                    <circle fill="#FFD061" cx="14" cy="44.9" r="1.9"/>
+                    <circle fill="#FFD061" cx="23.4" cy="44.9" r="1.9"/>
+                    <circle fill="#FFD061" cx="32.8" cy="44.9" r="1.9"/>
+                    <circle fill="#FFD061" cx="42.2" cy="44.9" r="1.9"/>
+                    <circle fill="#FFD061" cx="51.6" cy="44.9" r="1.9"/>
+                    <circle fill="#FFD061" cx="61" cy="44.9" r="1.9"/>
+                    <circle fill="#FFD061" cx="70.4" cy="44.9" r="1.9"/>
+                    <circle fill="#FFD061" cx="79.8" cy="44.9" r="1.9"/>
+                    <circle fill="#FFD061" cx="89.2" cy="44.9" r="1.9"/>
+                    <circle fill="#FFD061" cx="98.6" cy="44.9" r="1.9"/>
+                    <circle fill="#FFD061" cx="108" cy="44.9" r="1.9"/>
+                    <circle fill="#FFD061" cx="117.4" cy="44.9" r="1.9"/>
+                    <circle fill="#FFD061" cx="126.8" cy="44.9" r="1.9"/>
+                </g>
+            </svg>
+        </div>
+    </section>
+    <section id="sec4" class="m_sec games">
+        <div class="planet">
+            <svg viewBox="0 0 400 400">
+                <use xlink:href="#games"></use>
+            </svg>
+            <div class="tooltip transition slow">
+                <h2> المرحلة الثالثة (كوكب الألعاب)</h2>
+                <p>في جميع مراحل تعليمك... الأضواء هيكون رفيقك للنجاح بتفوق في كل المواد الدراسية ليضمن لك تفوق مستمر ومستقبل ناجح جداً</p>
+                <a class="btn locked" href="#"> المرحلة مغلقة  </a>
+            </div>
+        </div>
+        <div class="stars">
+            <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin slice">
+                <g class="starContainer">
+                </g>
+            </svg>
+        </div>
+        <div class="shootingStar_1">
+            <svg viewBox="0 0 68 69">
+                <use xlink:href="#shootingStar"></use>
+            </svg>
+        </div>
+    </section>
+    <section id="sec3" class="m_sec sport">
+        <div class="planet">
+            <svg viewBox="0 0 400 400">
+                <use xlink:href="#sport"></use>
+            </svg>
+            <div class="tooltip transition slow">
+                <h2> المرحلة الثانية (كوكب الرياضة)</h2>
+                <p>في جميع مراحل تعليمك... الأضواء هيكون رفيقك للنجاح بتفوق في كل المواد الدراسية ليضمن لك تفوق مستمر ومستقبل ناجح جداً</p>
+                <a class="btn locked" href="#"> المرحلة مغلقة </a>
+            </div>
+        </div>
+        <div class="stars">
+            <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin slice">
+                <g class="starContainer">
+                </g>
+            </svg>
+        </div>
+        <div class="satellite satellite_1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+                <path fill="#3D8DA6" d="M310.3 65.3c-3.5-3.5-3.5-8.9 0-12.4l45.1-45.1c3.5-3.5 8.9-3.5 12.4 0l25.6 25.6c3.5 3.5 3.5 8.9 0 12.4l-45.1 45.1c-3.5 3.5-8.9 3.5-12.4 0l-25.6-25.6z"/>
+                <path opacity=".1" fill="#FFF" d="M348.4 90.8l45.1-45.1c3.5-3.5 3.5-8.9 0-12.4l-12.9-12.9L323 77.9l12.9 12.9c3.5 3.6 8.9 3.6 12.5 0z"/>
+                <g fill="#66B5CC">
+                    <path d="M291.897 205.905l-20.93-20.93 3.676-3.677 20.93 20.93zM272.366 225.313l-20.93-20.93 3.677-3.677 20.93 20.93z"/>
+                </g>
+                <path fill="#3D8DA6" d="M251.6 235.9c-1.9-1.9-1.9-5.2 0-7l47.4-47.4c1.9-1.9 5.2-1.9 7 0l92.5 92.5c1.9 1.9 1.9 5.2 0 7l-47.4 47.4c-1.9 1.9-5.2 1.9-7 0l-92.5-92.5z"/>
+                <path fill="#9DD1E0" d="M256.8 235.4c-1.6-1.6-1.6-4.7 0-6.3l42.5-42.5c1.6-1.6 4.7-1.6 6.3 0l87.8 87.8c1.6 1.6 1.6 4.7 0 6.3l-42.5 42.5c-1.6 1.6-4.7 1.6-6.3 0l-87.8-87.8z"/>
+                <path fill="#3D8DA6" d="M372.77 277.705l9.264-9.263 9.263 9.263-9.263 9.263z"/>
+                <path opacity=".2" fill="#9DD1E0" d="M372.8 277.5l9.4-9.2v18.6"/>
+                <path fill="#3D8DA6" d="M361.25 289.204l9.264-9.263 9.263 9.264-9.263 9.263z"/>
+                <path opacity=".2" fill="#9DD1E0" d="M361.3 289l9.4-9.2v18.6"/>
+                <path fill="#3D8DA6" d="M349.8 300.774l9.264-9.263 9.263 9.264-9.263 9.263z"/>
+                <path opacity=".2" fill="#9DD1E0" d="M349.8 300.7l9.4-9.4v18.6"/>
+                <path fill="#3D8DA6" d="M338.447 312.06l9.263-9.264 9.263 9.263-9.263 9.262z"/>
+                <path opacity=".2" fill="#9DD1E0" d="M338.3 312.2l9.4-9.4v18.6"/>
+                <path fill="#3D8DA6" d="M361.483 266.208l9.263-9.263 9.263 9.263-9.264 9.263z"/>
+                <path opacity=".2" fill="#9DD1E0" d="M361.5 266.2l9.2-9.4v18.8"/>
+                <path fill="#3D8DA6" d="M349.962 277.707l9.263-9.263 9.263 9.263-9.263 9.263z"/>
+                <path opacity=".2" fill="#9DD1E0" d="M350 277.7l9.2-9.4v18.8"/>
+                <path fill="#3D8DA6" d="M338.513 289.277l9.263-9.263 9.263 9.263-9.264 9.263z"/>
+                <path opacity=".2" fill="#9DD1E0" d="M338.5 289.2l9.2-9.4v18.8"/>
+                <path fill="#3D8DA6" d="M326.992 300.776l9.263-9.263 9.263 9.263-9.263 9.263z"/>
+                <path opacity=".2" fill="#9DD1E0" d="M327 300.7l9.2-9.2v18.6"/>
+                <path fill="#3D8DA6" d="M350.1 254.855l9.262-9.263 9.263 9.263-9.263 9.263z"/>
+                <path opacity=".2" fill="#9DD1E0" d="M350 254.9l9.4-9.4v18.6"/>
+                <path fill="#3D8DA6" d="M338.578 266.354l9.263-9.263 9.264 9.264-9.263 9.263z"/>
+                <path opacity=".2" fill="#9DD1E0" d="M338.5 266.4l9.4-9.4v18.8"/>
+                <path fill="#3D8DA6" d="M327.058 277.853l9.263-9.263 9.264 9.263-9.263 9.263z"/>
+                <path opacity=".2" fill="#9DD1E0" d="M327 277.9l9.4-9.4v18.8"/>
+                <path fill="#3D8DA6" d="M315.538 289.352l9.263-9.263 9.264 9.262-9.263 9.263z"/>
+                <path opacity=".2" fill="#9DD1E0" d="M315.5 289.4l9.4-9.4v18.8"/>
+                <g>
+                    <path fill="#3D8DA6" d="M338.787 243.667l9.263-9.263 9.263 9.263-9.263 9.263z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M338.7 243.4l9.4-9.1v18.5"/>
+                    <path fill="#3D8DA6" d="M327.267 255.166l9.263-9.263 9.263 9.263-9.263 9.263z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M327.2 254.9l9.4-9.1v18.5"/>
+                    <g>
+                        <path fill="#3D8DA6" d="M315.747 266.665l9.263-9.263 9.263 9.263-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M315.7 266.7l9.4-9.4v18.5"/>
+                    </g>
+                    <g>
+                        <path fill="#3D8DA6" d="M304.392 278.092l9.263-9.263 9.263 9.262-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M304.2 278.2l9.4-9.4v18.5"/>
+                    </g>
+                </g>
+                <g>
+                    <path fill="#3D8DA6" d="M327.498 232.17l9.263-9.263 9.264 9.263-9.263 9.263z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M327.5 232.2l9.1-9.4v18.7"/>
+                    <path fill="#3D8DA6" d="M315.978 243.67l9.263-9.264 9.264 9.263-9.263 9.262z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M316 243.7l9.1-9.4v18.8"/>
+                    <g>
+                        <path fill="#3D8DA6" d="M304.458 255.168l9.263-9.263 9.264 9.263-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M304.5 255.2l9.1-9.4v18.8"/>
+                    </g>
+                    <g>
+                        <path fill="#3D8DA6" d="M292.938 266.667l9.263-9.263 9.264 9.263-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M293 266.7l9.1-9.2v18.6"/>
+                    </g>
+                </g>
+                <g>
+                    <path fill="#3D8DA6" d="M316.044 220.746l9.263-9.263 9.263 9.263-9.263 9.263z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M316 220.9l9.4-9.4V230"/>
+                    <path fill="#3D8DA6" d="M304.453 232.316l9.263-9.263 9.263 9.263-9.264 9.263z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M304.5 232.4l9.3-9.4v18.8"/>
+                    <g>
+                        <path fill="#3D8DA6" d="M293.003 243.885l9.263-9.263 9.263 9.263-9.264 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M293 243.9l9.3-9.4v18.8"/>
+                    </g>
+                    <g>
+                        <path fill="#3D8DA6" d="M281.483 255.384l9.263-9.263 9.263 9.264-9.264 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M281.5 255.4l9.3-9.4v18.8"/>
+                    </g>
+                </g>
+                <g>
+                    <path fill="#3D8DA6" d="M304.732 209.56l9.263-9.264 9.263 9.263-9.263 9.262z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M304.7 209.4l9.4-9.2v18.6"/>
+                    <path fill="#3D8DA6" d="M293.283 221.128l9.263-9.263 9.263 9.263-9.264 9.263z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M293.2 220.9l9.4-9.2v18.6"/>
+                    <g>
+                        <path fill="#3D8DA6" d="M281.692 232.698l9.263-9.263 9.263 9.263-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M281.7 232.6l9.4-9.4v18.6"/>
+                    </g>
+                    <g>
+                        <path fill="#3D8DA6" d="M270.338 243.983l9.263-9.263 9.264 9.263-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M270.2 244.1l9.4-9.4v18.6"/>
+                    </g>
+                </g>
+                <g>
+                    <path fill="#3D8DA6" d="M293.444 198.062l9.263-9.263 9.263 9.262-9.263 9.263z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M293.4 198.1l9.2-9.4v18.8"/>
+                    <path fill="#3D8DA6" d="M281.994 209.632l9.263-9.263 9.263 9.262-9.263 9.263z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M281.9 209.6l9.2-9.4V219"/>
+                    <g>
+                        <path fill="#3D8DA6" d="M270.403 221.2l9.263-9.262 9.263 9.263-9.264 9.264z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M270.4 221.1l9.2-9.4v18.8"/>
+                    </g>
+                    <g>
+                        <path fill="#3D8DA6" d="M258.883 232.7l9.263-9.263 9.263 9.263-9.264 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M258.9 232.6l9.2-9.1V242"/>
+                    </g>
+                </g>
+                <g>
+                    <g fill="#66B5CC">
+                        <path d="M197.73 104.892l20.93 20.93-3.677 3.677-20.93-20.93zM178.435 124.3l20.93 20.93-3.677 3.677-20.93-20.93z"/>
+                    </g>
+                    <path fill="#3D8DA6" d="M164.1 148.6c1.9 1.9 5.2 1.9 7 0l47.4-47.4c1.9-1.9 1.9-5.2 0-7L126.1 1.6c-1.9-1.9-5.2-1.9-7 0L71.6 49.1c-1.9 1.9-1.9 5.2 0 7l92.5 92.5z"/>
+                    <path fill="#9DD1E0" d="M164.8 143.4c1.6 1.6 4.7 1.6 6.3 0l42.3-42.3c1.6-1.6 1.6-4.7 0-6.3l-87.8-88c-1.6-1.6-4.7-1.6-6.3 0L76.8 49.3c-1.6 1.6-1.6 4.7 0 6.3l88 87.8z"/>
+                    <path fill="#3D8DA6" d="M113.465 18.042l9.263-9.263 9.263 9.262-9.262 9.263z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M122.5 27.5l9.4-9.4h-18.5"/>
+                    <path fill="#3D8DA6" d="M101.874 29.612l9.263-9.263 9.263 9.262-9.263 9.263z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M111 39l9.4-9.4h-18.5"/>
+                    <path fill="#3D8DA6" d="M90.353 41.11l9.263-9.262 9.263 9.263-9.264 9.264z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M99.5 50.5l9.4-9.4H90.4"/>
+                    <path fill="#3D8DA6" d="M78.904 52.68l9.263-9.262 9.263 9.263-9.263 9.264z"/>
+                    <path opacity=".2" fill="#9DD1E0" d="M88 62l9.4-9.4H78.9"/>
+                    <g>
+                        <path fill="#3D8DA6" d="M124.683 29.61l9.263-9.263 9.263 9.263-9.264 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M134 38.7l9.2-9.4h-18.6"/>
+                        <path fill="#3D8DA6" d="M113.163 41.11l9.263-9.264 9.263 9.263-9.264 9.262z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M122.5 50.2l9.2-9.1h-18.6"/>
+                        <g>
+                            <path fill="#3D8DA6" d="M101.713 52.678l9.263-9.263 9.263 9.263-9.264 9.263z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M111 61.7l9.2-9.1h-18.6"/>
+                        </g>
+                        <g>
+                            <path fill="#3D8DA6" d="M89.98 64.01l9.262-9.262 9.263 9.263-9.263 9.264z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M99.5 73.2l9.2-9.1H90.1"/>
+                        </g>
+                    </g>
+                    <g>
+                        <path fill="#3D8DA6" d="M135.994 40.797l9.263-9.263 9.263 9.263-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M145.3 50.2l9.4-9.4h-18.8"/>
+                        <path fill="#3D8DA6" d="M124.474 52.296l9.263-9.263L143 52.296l-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M133.8 61.7l9.4-9.4h-18.8"/>
+                        <g>
+                            <path fill="#3D8DA6" d="M112.954 63.795l9.263-9.263 9.263 9.263-9.263 9.263z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M122.3 73.2l9.4-9.4h-18.8"/>
+                        </g>
+                        <g>
+                            <path fill="#3D8DA6" d="M101.504 75.365l9.263-9.263 9.263 9.263-9.263 9.263z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M110.8 84.7l9.4-9.3h-18.8"/>
+                        </g>
+                    </g>
+                    <g>
+                        <path fill="#3D8DA6" d="M147.45 52.08l9.262-9.263 9.263 9.263-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M156.6 61.5l9.4-9.4h-18.6"/>
+                        <path fill="#3D8DA6" d="M136 63.65l9.262-9.263 9.263 9.263-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M145.1 73l9.4-9.4h-18.6"/>
+                        <g>
+                            <path fill="#3D8DA6" d="M124.48 75.15l9.262-9.264 9.263 9.263-9.263 9.262z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M133.6 84.5l9.4-9.4h-18.6"/>
+                        </g>
+                        <g>
+                            <path fill="#3D8DA6" d="M112.96 86.648l9.262-9.263 9.263 9.263-9.263 9.263z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M122.1 96l9.4-9.4h-18.6"/>
+                        </g>
+                    </g>
+                    <g>
+                        <path fill="#3D8DA6" d="M158.738 63.577L168 54.314l9.264 9.263L168 72.84z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M168.1 72.8l9.1-9.4h-18.5"/>
+                        <path fill="#3D8DA6" d="M147.288 75.147l9.263-9.263 9.264 9.263-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M156.6 84.3l9.1-9.2h-18.5"/>
+                        <g>
+                            <path fill="#3D8DA6" d="M135.768 86.646l9.263-9.263 9.264 9.263-9.263 9.263z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M145.1 95.8l9.1-9.2h-18.5"/>
+                        </g>
+                        <g>
+                            <path fill="#3D8DA6" d="M124.104 98.05l9.263-9.264 9.263 9.263-9.263 9.262z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M133.6 107.3l9.1-9.2h-18.5"/>
+                        </g>
+                    </g>
+                    <g>
+                        <path fill="#3D8DA6" d="M170.05 74.765l9.262-9.263 9.263 9.263-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M179.3 84.3l9.4-9.4H170"/>
+                        <path fill="#3D8DA6" d="M158.6 86.334l9.263-9.263 9.263 9.264-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M167.8 95.8l9.4-9.4h-18.7"/>
+                        <g>
+                            <path fill="#3D8DA6" d="M147.08 97.833l9.262-9.263 9.263 9.263-9.263 9.263z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M156.3 107.3l9.4-9.4h-18.8"/>
+                        </g>
+                        <g>
+                            <path fill="#3D8DA6" d="M135.488 109.403l9.263-9.263 9.264 9.263-9.263 9.263z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M144.8 118.8l9.4-9.4h-18.8"/>
+                        </g>
+                    </g>
+                    <g>
+                        <path fill="#3D8DA6" d="M181.504 86.19l9.263-9.264 9.263 9.263-9.263 9.262z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M190.6 95.5l9.4-9.3h-18.5"/>
+                        <path fill="#3D8DA6" d="M169.983 97.687l9.263-9.263 9.263 9.263-9.264 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M179.1 107l9.4-9.3H170"/>
+                        <g>
+                            <path fill="#3D8DA6" d="M158.463 109.186l9.263-9.263 9.263 9.263-9.264 9.263z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M167.6 118.5l9.4-9.3h-18.5"/>
+                        </g>
+                        <g>
+                            <path fill="#3D8DA6" d="M146.943 120.685l9.263-9.263 9.263 9.263-9.264 9.263z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M156.1 130l9.4-9.3h-18.6"/>
+                        </g>
+                    </g>
+                    <g>
+                        <path fill="#3D8DA6" d="M192.793 97.685l9.263-9.263 9.263 9.263-9.264 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M202.1 106.8l9.2-9.4h-18.6"/>
+                        <path fill="#3D8DA6" d="M181.272 109.184l9.263-9.263 9.263 9.264-9.263 9.263z"/>
+                        <path opacity=".2" fill="#9DD1E0" d="M190.6 118.3l9.2-9.1h-18.6"/>
+                        <g>
+                            <path fill="#3D8DA6" d="M169.752 120.683l9.263-9.263 9.263 9.263-9.263 9.263z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M179.1 129.8l9.2-9.1h-18.6"/>
+                        </g>
+                        <g>
+                            <path fill="#3D8DA6" d="M158.088 132.087l9.263-9.263 9.264 9.263-9.263 9.263z"/>
+                            <path opacity=".2" fill="#9DD1E0" d="M167.6 141.3l9.2-9.1h-18.6"/>
+                        </g>
+                    </g>
+                </g>
+                <path fill="#3D8DA6" d="M146.96 229.017l32.174-32.173 25.03 25.032-32.172 32.173z"/>
+                <path opacity=".1" fill="#FFF" d="M159.52 241.32l32.172-32.172 12.09 12.09-32.172 32.174z"/>
+                <g fill="#3D8DA6">
+                    <path d="M279.243 130.03l19.728-19.727 10.324 10.324-19.728 19.728zM260.735 111.57l19.728-19.727 10.323 10.323-19.728 19.728z"/>
+                </g>
+                <g>
+                    <path fill="#9DD1E0" d="M83.6 314.3l1.6 1.7 1.7 1.6 46-39.4-5-5-4.9-4.9"/>
+                    <circle fill="#66B5CC" cx="83.3" cy="317.8" r="11.3"/>
+                </g>
+                <path fill="#9DD1E0" d="M172.3 351.6c33.8-33.8 33.8-89 0-122.8s-89-33.8-122.8 0l122.8 122.8z"/>
+                <path fill="#66B5CC" d="M61 219.2c-4 2.8-7.7 6.1-11.3 9.6l122.8 122.8c3.5-3.5 6.8-7.3 9.6-11.3L61 219.2zM165.454 200.174l21.778-21.78 35.71 35.71-21.78 21.78z"/>
+                <path fill="#66B5CC" d="M165.454 200.174l21.778-21.78 35.71 35.71-21.78 21.78z"/>
+                <path opacity=".1" d="M165.294 199.976l21.78-21.78 17.96 17.96-21.78 21.78z"/>
+                <path opacity=".1" fill="#265969" d="M165.294 199.976l21.78-21.78 17.96 17.96-21.78 21.78z"/>
+                <path fill="#66B5CC" d="M303.307 53.277l40.66-40.66 44.475 44.478-40.658 40.658z"/>
+                <path opacity=".1" fill="#265969" d="M303.376 53.06l40.66-40.66 22.272 22.274-40.658 40.66z"/>
+                <path fill="#9DD1E0" d="M170 187.6c-3.5-3.5-3.5-8.9 0-12.4l77.7-77.7c3.5-3.5 8.9-3.5 12.4 0l43.7 43.7c3.5 3.5 3.5 8.9 0 12.4L226.1 231c-3.5 3.5-8.9 3.5-12.4 0L170 187.6zM272.3 85.2c-3.5-3.5-3.5-8.9 0-12.4L323 22.1c3.5-3.5 8.9-3.5 12.4 0l43.7 43.7c3.5 3.5 3.5 8.9 0 12.4l-50.7 50.7c-3.5 3.5-8.9 3.5-12.4 0l-43.7-43.7z"/>
+                <path opacity=".2" fill="#3D8DA6" d="M238.378 218.96l-3.677 3.677-56.072-56.074 3.677-3.676zM294.338 162.78l-3.677 3.678-56.072-56.073 3.677-3.677zM370.716 86.503l-3.677 3.677-56.074-56.073 3.677-3.677z"/>
+                <path opacity=".6" fill="#CDEFFA" d="M157 336.4c33.8-33.8 40.8-82.2 15.3-107.5-25.6-25.6-73.7-18.8-107.5 15.3l92.2 92.2z"/>
+                <path opacity=".4" fill="#E0F8FF" d="M133.6 312.7c33.8-33.8 51.4-71.6 38.7-84-12.4-12.4-50 4.9-84 38.7l45.3 45.3z"/>
+                <path opacity=".6" fill="#66B5CC" d="M61 219.2c-4 2.8-7.7 6.1-11.3 9.6l122.8 122.8c3.5-3.5 6.8-7.3 9.6-11.3L61 219.2z"/>
+                <path opacity=".3" fill="#FFF" d="M191.8 209.4l21.8 21.8c3.5 3.5 8.9 3.5 12.4 0l77.7-77.7c3.5-3.5 3.5-8.9 0-12.4l-21.8-21.8-90.1 90.1zM294.1 107l21.8 21.8c3.5 3.5 8.9 3.5 12.4 0L379 78.1c3.5-3.5 3.5-8.9 0-12.4l-21.8-21.8-63.1 63.1z"/>
+                <g>
+                    <circle fill="#FF456A" cx="276.5" cy="148.8" r="12"/>
+                    <circle fill="#3D8DA6" cx="254.5" cy="170.7" r="5.6"/>
+                    <circle fill="#3D8DA6" cx="237.1" cy="188.3" r="5.6"/>
+                </g>
+                <g>
+                    <circle fill="#3D8DA6" cx="335.2" cy="90.1" r="7.3"/>
+                    <path fill="#66B5CC" d="M294.8 63.6c-1.2-1.2-1.2-2.8 0-3.8l9.9-9.9c1.2-1.2 2.8-1.2 3.8 0l13.4 13.4c1.2 1.2 1.2 2.8 0 3.8L312 77c-1.2 1.2-2.8 1.2-3.8 0l-13.4-13.4z"/>
+                </g>
+                <g fill="none" stroke="#FFF" stroke-linecap="round" stroke-miterlimit="10">
+                    <path class="wave" stroke-width="6" d="M50.9 326.1c0 12.4 10.1 22.8 22.8 22.8"/>
+                    <path class="wave" stroke-width="7" d="M28.4 336.4c0 19.2 15.5 34.7 34.7 34.7"/>
+                    <path class="wave" stroke-width="8" d="M5.9 346.9c0 26.1 20.9 46.9 46.9 46.9"/>
+                </g>
+            </svg>
+        </div>
+    </section>
+    <section id="sec2" class="m_sec knowledge">
+        <div class="planet">
+            <svg viewBox="0 0 400 400">
+                <use xlink:href="#knowledge"></use>
+            </svg>
+            <div class="tooltip transition slow">
+                <h2> المرحلة الأولي (كوكب الثقافة)</h2>
+                <p>في جميع مراحل تعليمك... الأضواء هيكون رفيقك للنجاح بتفوق في كل المواد الدراسية ليضمن لك تفوق مستمر ومستقبل ناجح جداً</p>
+                <a class="btn" href="#">ابدأ المرحلة</a>
+            </div>
+        </div>
+        <div class="stars">
+            <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin slice">
+                <g class="starContainer">
+                </g>
+            </svg>
+        </div>
+    </section>
+    <section id="sec1" class="m_sec intro">
+        <div class="vp transition">
+            <span class="medium">المسابقة الصيفية</span>
+            <h1> مغامرة بين الكواكب</h1>
+            <p>انضم إلينا فى رحلة فضائية مثيرة تنطلق بك بين الكواكب تختبر فيها معرفتك ومعلوماتك، وتستمتع خلالها بالألعاب، وتتنافس مع الأصدقاء، وتفوز فى نهايتها بهدايا مميزة وقيّمة.</p>
+            <a class="btn scrl_to" href="#sec2"> انطلق الآن  </a>
+        </div>
+        <div class="rocket_container">
+            <div class="rocket transition slow">
+                <svg viewBox="0 0 126.3 243.2">
+                    <use xlink:href="#rocket"></use>
+                </svg>
+                <span>
+                    <i class="fire transition"></i>
+                    <i class="wastes transition"><i></i><i></i><i></i><i></i><i></i></i>
+                </span>
+            </div>
+        </div>
+        <div class="balloon">
+            <svg viewBox="0 0 118 72">
+                <use xlink:href="#balloon"></use>
+            </svg>
+        </div>
+        <div class="cloud cloud--1">
+            <svg viewBox="0 0 703 228">
+                <use xlink:href="#cloud_1"></use>
+            </svg>
+        </div>
+        <div class="cloud cloud--2">
+            <svg viewBox="0 0 817 228">
+                <use xlink:href="#cloud_2"></use>
+            </svg>
+        </div>
+        <div class="cloud cloud--3">
+            <svg viewBox="0 0 606 228">
+                <use xlink:href="#cloud_3"></use>
+            </svg>
+        </div>
+        <div class="landscape">
+            <div class="land">
+                <div class="left_elems">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 108.7 400.1 182.6">
+                        <path fill="#AAE81A" d="M222.4 291.2c.1-1.2.1-2.4.1-3.5 0-34-32.8-61.6-73.4-61.6s-73.3 27.7-73.3 61.7c0 1.2 0 2.4.1 3.5l146.5-.1z"/>
+                        <path opacity=".1" d="M149 226.1v65.1h73.2c.1-1.2.1-2.4.1-3.5.2-34-32.7-61.6-73.3-61.6z"/>
+                        <path fill="#C9D7E8" d="M82.9 183.3H90v107.9h-7.2V183.3z"/>
+                        <path opacity=".2" d="M86.4 183.3h3.5v107.9h-3.5V183.3z"/>
+                        <path fill="#47677F" d="M111.4 191.5H44.1V189l21.4-42.7h66.2v4.6"/>
+                        <path fill="#C9D7E8" d="M110.3 189H44.1l21.4-42.7h66.2"/>
+                        <path fill="#47677F" d="M76.5 166.5h-18l9-18h18m12 18h-18l9-18h18m12.2 18h-18l9-18h18M66.3 186.9h-18l8.9-18h18m12.1 18h-18l9-18h18m12.1 18h-18l9-18h18"/>
+                        <path opacity=".16" fill="#FFF" d="M67.5 148.5h18l-9 18m12.1-18h18l-9 18m12.1-18h18l-9 18m-19.2 2.4h18l-9 18m-30.2-18h18l-9 18m-30.1-18h18l-8.9 18"/>
+                        <path fill="#FAFFFA" d="M269.5 172.9H264l-2.6 118.3h10.4"/>
+                        <path opacity=".1" d="M266.7 291.2h5.2l-2.5-118.3h-2.8"/>
+                        <path fill="#A1662B" d="M18.4 253.5H26v37.7h-7.6v-37.7z"/>
+                        <path opacity=".1" d="M21.6 253.5H26v37.7h-4.3v-37.7z"/>
+                        <path fill="#0AB500" d="M21.6 209.4L0 273h43.2"/>
+                        <path opacity=".1" d="M21.6 209.4V273h21.5"/>
+                        <g>
+                            <path fill="#0AB500" d="M347.1 261.1s-7 .6-10.6 4.7c-3 3.4-.7 8.2-.7 8.2s4.9 1.7 8-1.7c3.6-4.2 3.3-11.2 3.3-11.2z"/>
+                            <path opacity=".1" d="M347.1 261.1L335.8 274s4.9 1.7 8-1.7c3.6-4.2 3.3-11.2 3.3-11.2z"/>
+                            <path fill="#407519" d="M329.1 281.9c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4l8.6-8.7c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-8.6 8.7z"/>
+                            <path fill="#0AB500" d="M310.3 245.4s6.8.6 10.3 4.6c2.9 3.3.7 7.9.7 7.9s-4.8 1.7-7.8-1.7c-3.4-4-3.2-10.8-3.2-10.8z"/>
+                            <path opacity=".1" d="M310.3 245.4l11 12.5s-4.8 1.7-7.8-1.7c-3.4-4-3.2-10.8-3.2-10.8z"/>
+                            <path fill="#407519" d="M327.7 265.6c.4.4.9.4 1.3 0s.4-.9 0-1.3l-8.4-8.6c-.4-.4-.9-.4-1.3 0s-.4.9 0 1.3l8.4 8.6z"/>
+                            <path fill="#0AB500" d="M314.1 265.6s4.3-.3 7 1.9c2.2 1.9 1.2 4.9 1.2 4.9s-2.9 1.6-5.1-.3c-2.6-2.2-3.1-6.5-3.1-6.5z"/>
+                            <path opacity=".1" d="M314.1 265.6l8.3 6.9s-2.9 1.6-5.1-.3c-2.7-2.3-3.2-6.6-3.2-6.6z"/>
+                            <path fill="#407519" d="M327.2 276.7c.3.2.6.2.8-.1.2-.3.2-.6-.1-.8l-6.1-4.6c-.3-.2-.6-.2-.8.1-.2.3-.2.6.1.8l6.1 4.6z"/>
+                            <path fill="#0AB500" d="M343.6 252s-4.7-.6-7.7 1.7c-2.5 1.9-1.6 5.3-1.6 5.3s3 1.8 5.5 0c3-2.4 3.8-7 3.8-7z"/>
+                            <path opacity=".1" d="M343.6 252l-9.2 7s3 1.8 5.5 0c2.9-2.4 3.7-7 3.7-7z"/>
+                            <path fill="#407519" d="M328.8 263.2c-.3.2-.7.1-.9-.2-.2-.3-.1-.7.2-.9l6.9-4.6c.3-.2.7-.1.9.2.2.3.1.7-.2.9l-6.9 4.6z"/>
+                            <path fill="#0AB500" d="M327.4 238.1s-3.5 4.5-3.2 9.2c.2 3.9 4 5.4 4 5.4s3.6-1.9 3.4-5.8c-.3-4.7-4.2-8.8-4.2-8.8z"/>
+                            <path opacity=".1" d="M327.4 238.1l.8 14.6s3.6-1.9 3.4-5.8c-.3-4.7-4.2-8.8-4.2-8.8z"/>
+                            <path fill="#407519" d="M328.9 260c0 .4-.3.7-.7.7-.4 0-.7-.3-.7-.7v-9.4c0-.4.3-.7.7-.7s.7.3.7.7v9.4z"/>
+                            <path fill="#407519" d="M329.5 291.1v-32.3c0-.7-.6-1.3-1.3-1.3s-1.3.6-1.3 1.3v32.3h2.6z"/>
+                            <circle fill="#FF6E30" cx="333.5" cy="262.2" r="2.2"/>
+                            <circle fill="#FF6E30" cx="322.4" cy="275.9" r="2.2"/>
+                            <circle fill="#FF6E30" cx="322.2" cy="262.4" r="2.2"/>
+                            <circle fill="#FF6E30" cx="335.7" cy="278.1" r="2.2"/>
+                        </g>
+                        <g>
+                            <path fill="#5B8500" d="M387.6 276.8h2.1v14.4h-2.1v-14.4z"/>
+                            <path opacity=".1" d="M388.7 276.8h1.1v14.4h-1.1v-14.4z"/>
+                            <path fill="#14B1FF" d="M400 269.9s-3.8.6-7.3 2.6c.3-.7.6-1.5.7-2.3.4-3.6-3.9-8.1-4.7-8.8-.8.8-5.1 5.2-4.7 8.8.1.8.3 1.6.7 2.3-3.4-2-7.3-2.6-7.3-2.6s-.6 5.3 2.3 8.2c2.1 2.1 6.5 2 8.7 1.9h.6c2.2.2 6.6.2 8.7-1.9 2.9-2.8 2.3-8.2 2.3-8.2z"/>
+                            <path opacity=".1" d="M400 269.9s-3.8.6-7.3 2.6c.3-.7.6-1.5.7-2.3.4-3.6-3.9-8.1-4.7-8.8v18.5h.3c2.2.2 6.6.2 8.7-1.9 2.9-2.7 2.3-8.1 2.3-8.1z"/>
+                        </g>
+                        <g>
+                            <path fill="#5B8500" d="M69.5 275.6h2.3V291h-2.3v-15.4z"/>
+                            <path opacity=".1" d="M70.7 275.6h1.2V291h-1.2v-15.4z"/>
+                            <path fill="#C34BF2" d="M82.9 268.3s-4.1.6-7.8 2.8c.4-.7.7-1.6.8-2.4.4-3.9-4.2-8.7-5.1-9.5-.9.8-5.5 5.6-5.1 9.5.1.9.4 1.7.8 2.4-3.6-2.2-7.8-2.8-7.8-2.8s-.7 5.7 2.4 8.7c2.3 2.3 7.1 2.2 9.4 2h.6c2.4.2 7.2.3 9.4-2 3-3 2.4-8.7 2.4-8.7z"/>
+                            <path opacity=".1" d="M82.9 268.3s-4.1.6-7.8 2.8c.4-.7.7-1.6.8-2.4.4-3.9-4.2-8.7-5.1-9.5V279h.3c2.4.2 7.2.3 9.4-2 3-3 2.4-8.7 2.4-8.7z"/>
+                        </g>
+                        <g>
+                            <path fill="#A1662B" d="M239 265.4h3.2v24.9H239v-24.9z"/>
+                            <path opacity=".1" d="M239 265.4h1.9v24.9H239v-24.9z"/>
+                            <path fill="#A1662B" d="M253.7 260.3h2.2l7.1-14.2h-2.2"/>
+                            <path opacity=".1" d="M253.7 260.3h1.3l7.1-14.2h-1.3"/>
+                            <circle fill="#0AB500" cx="264.6" cy="242.1" r="9.6"/>
+                            <path opacity=".1" d="M264.6 232.6v19.2c-5.3 0-9.6-4.3-9.6-9.6 0-5.4 4.3-9.6 9.6-9.6z"/>
+                            <circle fill="#0AB500" cx="240.6" cy="258" r="16.5"/>
+                            <path opacity=".1" d="M240.6 241.4v33.1c-9.1 0-16.5-7.4-16.5-16.5-.1-9.2 7.4-16.6 16.5-16.6z"/>
+                            <g>
+                                <circle fill="#0AB500" cx="222" cy="248.9" r="11.4"/>
+                                <path opacity=".1" d="M222 237.5v22.7c-6.3 0-11.4-5.1-11.4-11.4 0-6.2 5.1-11.3 11.4-11.3z"/>
+                            </g>
+                        </g>
+                        <g id="rotate">
+                            <path fill="#FAFFFA" d="M257.4 174.9c1.7-1 3.7-.4 4.7 1.2 1 1.7.4 3.7-1.2 4.7l-39.3 23.1c-1.7 1-10.4 4.3-11.3 2.7-1-1.7 6.3-7.7 7.9-8.6l39.2-23.1z"/>
+                            <path opacity=".1" d="M210.2 206.5l51.9-30.4c-1-1.7-3-2.2-4.7-1.2L218 198.1c-1.5.9-8.8 6.8-7.8 8.4z"/>
+                            <path fill="#FAFFFA" d="M275.5 174.9c-1.7-.9-3.7-.3-4.6 1.4-.9 1.7-.3 3.7 1.4 4.6l40 21.8c1.7.9 10.5 4 11.4 2.4.9-1.7-6.5-7.5-8.2-8.4l-40-21.8z"/>
+                            <path opacity=".1" d="M323.7 205.1l-52.8-28.8c.9-1.7 2.9-2.3 4.6-1.4l40 21.8c1.7.9 9.1 6.7 8.2 8.4z"/>
+                            <circle fill="#338B96" cx="266.9" cy="174.1" r="5.5"/>
+                            <path opacity=".1" d="M268.1 168.8l-2.4 10.7c2.9.7 5.9-1.2 6.6-4.2.7-3-1.2-5.9-4.2-6.5z"/>
+                            <circle fill="#FAFFFA" cx="266.9" cy="174.1" r="2.8"/>
+                            <path opacity=".1" d="M267.5 171.4l-1.2 5.4c1.5.3 2.9-.6 3.3-2.2.4-1.5-.5-2.9-2.1-3.2z"/>
+                            <g>
+                                <path fill="#FAFFFA" d="M270.4 165.4c0 1.9-1.5 3.4-3.4 3.4s-3.4-1.5-3.4-3.4l-.1-45.6c0-1.9 1.5-11.1 3.3-11.1 1.9 0 3.4 9.2 3.4 11.1l.2 45.6z"/>
+                                <path opacity=".1" d="M266.8 108.7l.2 60.2c1.9 0 3.4-1.6 3.4-3.4l-.1-45.6c-.1-1.9-1.5-11.2-3.5-11.2z"/>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="right_elems">
+                    <svg viewBox="0 0 406.9 185.7">
+                        <use xlink:href="#right_elems"></use>
+                    </svg>
+                </div>
+                <div class="grass"></div>
+            </div>
+        </div>
+        <footer>
+            <a href="http://www.aladwaa.com/" class="footer_logo">
+                <svg class="logo_icon" viewBox="0 0 195 95">
+                    <use xlink:href="#aladwaa_logo"></use>
+                </svg>
+            </a>
+
+            <small>دار نهضة مصر للنشر ش.م.م</small>
+            <small>جميع الحقوق محفوظة © 2016 </small>
+        </footer>
+    </section>
+</div>
+
+
+<!--Ajaxing for SVG Sprite ...-->
+<script type="text/javascript">
+    var ajax2 = new XMLHttpRequest();
+    ajax2.open("GET", "img/planets.svg", true);
+    ajax2.send();
+    ajax2.onload = function(e) {
+        var div = document.createElement("div");
+        div.innerHTML = ajax2.responseText;
+        document.body.insertBefore(div, document.body.childNodes[1]);
+    }
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+<script src="js/main.js" type="text/javascript"></script>
+<script src="js/vendor/jquery.scrollto.js"></script>
+<script src="js/home.js" type="text/javascript"></script>
+
+
+</body>
+</html>
