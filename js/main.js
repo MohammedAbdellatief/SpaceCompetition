@@ -17,9 +17,9 @@
     // click more to expand content
     //=====================================================
     $('.more_link').on('click touchstart',function(e){
-        e.preventDefault()
+        e.preventDefault();
         $(this).parent().toggleClass('show_content').find('.mor_container').toggleClass('show_content').find('.mor_content').toggleClass('show_content');
-    })
+    });
 
 
 
@@ -51,7 +51,7 @@
                 attr: {
                     r: randomBetween(2, 10) / 10,
                     cx: randomBetween(1, 800),
-                    cy: randomBetween(1, 500)
+                    cy: randomBetween(1, 700)
                 }
             });
         }
