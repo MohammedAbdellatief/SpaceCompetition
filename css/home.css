@@ -130,7 +130,8 @@ nav a:after{
     right: 0;
     margin: auto;
     background: transparent url(../img/dashed.svg) no-repeat scroll center center;
-    height: 25px;
+    height: 20px;
+    bottom: -7px;
 }
 
 nav li:last-child a:after{
